@@ -25,8 +25,8 @@ config_gnome() {
   gsettings set org.gnome.settings-daemon.plugins.media-keys.custom-keybinding:/org/gnome/settings-daemon/plugins/media-keys/custom-keybindings/custom0/ command "ptyxis -s"
   gsettings set org.gnome.settings-daemon.plugins.media-keys.custom-keybinding:/org/gnome/settings-daemon/plugins/media-keys/custom-keybindings/custom0/ binding "<Control><Alt>T"
   # Others
-  echo Set volume up/down step at 5
-  gsettings set org.gnome.settings-daemon.plugins.media-keys volume-step 5 
+  echo Set volume up/down step at 2
+  gsettings set org.gnome.settings-daemon.plugins.media-keys volume-step 2 
   echo Set workspaces to be 4
   gsettings set org.gnome.mutter dynamic-workspaces false
   gsettings set org.gnome.desktop.wm.preferences num-workspaces 4
