@@ -1,12 +1,13 @@
 #!/bin/bash
 
 dotfiles() {
-  DOT_FILE_LOCATION="~/setup/dotfiles"
+  DOT_FILE_LOCATION="/home/phu/setup/dotfiles"
   # List of dotfiles and their locations
   declare -A DOTFILES=(
     [".gitconfig"]="$DOT_FILE_LOCATION/.gitconfig"
     [".vimrc"]="$DOT_FILE_LOCATION/.vimrc"
     [".terraformrc"]="$DOT_FILE_LOCATION/.terraformrc"
+    [".ssh/config"]="$DOT_FILE_LOCATION/.ssh-config"
   )
 
   # Loop through each dotfile and create a symlink if it doesn't exist
