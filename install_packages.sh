@@ -13,6 +13,7 @@ install_packages() {
     gnome-tweaks
     lm_sensors
     gvfs-nfs
+    kdiff3
   )
 
   echo "🔍 Checking for updates..."
