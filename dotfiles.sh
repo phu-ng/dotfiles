@@ -8,6 +8,8 @@ dotfiles() {
     [".vimrc"]="$DOT_FILE_LOCATION/.vimrc"
     [".terraformrc"]="$DOT_FILE_LOCATION/.terraformrc"
     [".ssh/config"]="$DOT_FILE_LOCATION/.ssh-config"
+    [".config/kitty/kitty.conf"]="$DOT_FILE_LOCATION/kitty.conf"
+    [".config/kitty/theme.conf"]="$DOT_FILE_LOCATION/theme.conf"
   )
 
   # Loop through each dotfile and create a symlink if it doesn't exist

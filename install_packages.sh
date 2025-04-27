@@ -14,6 +14,8 @@ install_packages() {
     lm_sensors
     gvfs-nfs
     kdiff3
+    fzf
+    zoxide
   )
 
   echo "🔍 Checking for updates..."
