@@ -7,17 +7,17 @@ config_gnome() {
   echo Set volume down to Alt+Down
   gsettings set org.gnome.settings-daemon.plugins.media-keys volume-down "['<Alt>Down']"
   echo Set Switch to workspace 1 to Ctrl+1
-  gsettings set org.gnome.desktop.wm.keybindings switch-to-workspace-1 "['<Control>1']"
+  gsettings set org.gnome.desktop.wm.keybindings switch-to-workspace-1 "['<Alt>1']"
   echo Set Switch to workspace 2 to Ctrl+2
-  gsettings set org.gnome.desktop.wm.keybindings switch-to-workspace-2 "['<Control>2']"  
+  gsettings set org.gnome.desktop.wm.keybindings switch-to-workspace-2 "['<Alt>2']"  
   echo Set Switch to workspace 3 to Ctrl+3
-  gsettings set org.gnome.desktop.wm.keybindings switch-to-workspace-3 "['<Control>3']"
+  gsettings set org.gnome.desktop.wm.keybindings switch-to-workspace-3 "['<Alt>3']"
   echo Set Switch to workspace 4 to Ctrl+4
-  gsettings set org.gnome.desktop.wm.keybindings switch-to-workspace-4 "['<Control>4']"
+  gsettings set org.gnome.desktop.wm.keybindings switch-to-workspace-4 "['<Alt>4']"
   echo Set Switch windows to Alt+Tab
-  gsettings set org.gnome.desktop.wm.keybindings switch-windows "['<Alt>Tab']"
+  gsettings set org.gnome.desktop.wm.keybindings switch-windows "['<Control>Tab']"
   echo Set Switch input source to Ctrl+Space
-  gsettings set org.gnome.desktop.wm.keybindings switch-input-source "['<Control>space', 'XF86Keyboard']"
+  gsettings set org.gnome.desktop.wm.keybindings switch-input-source "['<Alt>space', 'XF86Keyboard']"
   # Creating custom shortcut
   gsettings set org.gnome.settings-daemon.plugins.media-keys custom-keybindings "['/org/gnome/settings-daemon/plugins/media-keys/custom-keybindings/custom0/']"
   ## Open Terminal
@@ -25,8 +25,8 @@ config_gnome() {
   gsettings set org.gnome.settings-daemon.plugins.media-keys.custom-keybinding:/org/gnome/settings-daemon/plugins/media-keys/custom-keybindings/custom0/ command "kitty"
   gsettings set org.gnome.settings-daemon.plugins.media-keys.custom-keybinding:/org/gnome/settings-daemon/plugins/media-keys/custom-keybindings/custom0/ binding "<Control><Alt>T"
   # Others
-  echo Set volume up/down step at 5
-  gsettings set org.gnome.settings-daemon.plugins.media-keys volume-step 5 
+  echo Set volume up/down step at 3
+  gsettings set org.gnome.settings-daemon.plugins.media-keys volume-step 3
   echo Set workspaces to be 4
   gsettings set org.gnome.mutter dynamic-workspaces false
   gsettings set org.gnome.desktop.wm.preferences num-workspaces 4
